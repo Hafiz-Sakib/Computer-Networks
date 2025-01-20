@@ -76,7 +76,8 @@ void calculateSubnets(unsigned long baseIP, int originalMask, int newMask, int n
 
         // Print the results for this subnet
         cout << "Subnet " << i + 1 << ":" << endl;
-        cout << "  Network Address: " << intToIP(networkAddress) << endl;
+        cout << "  Network Address: " << intToIP(networkAddress) << "/" << newMask << endl;
+        cout << "  Subnet Mask: " << intToIP(cidrToMask(newMask)) << endl;
         cout << "  Broadcast Address: " << intToIP(broadcastAddress) << endl;
         cout << "  First Host: " << intToIP(firstHost) << endl;
         cout << "  Last Host: " << intToIP(lastHost) << endl;
