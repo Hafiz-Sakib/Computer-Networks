@@ -94,6 +94,10 @@ int main()
     sscanf(ip.c_str(), "%lu.%lu.%lu.%lu", &octets[0], &octets[1], &octets[2], &octets[3]);
     unsigned long baseIP = (octets[0] << 24) | (octets[1] << 16) | (octets[2] << 8) | octets[3];
 
+    // Align the base IP with the correct network block (for example, 10.16.0.0 for /12 mask)
+    // Calculate the aligned network address (clear the host bits based on the original mask)
+    baseIP = baseIP & (0xFFFFFFFF << (32 - originalMask));
+
     // Input the host requirements for each subnet
     vector<int> hostRequirements(numSubnets);
     cout << "Enter the number of required hosts for each subnet:" << endl;
