@@ -1,0 +1,31 @@
+Tue Dec 3 12:25:38 2024   Switch0   Switch>en
+Tue Dec 3 12:25:50 2024   Switch0   Switch#conf t
+Tue Dec 3 12:26:20 2024   Switch0   Switch(config)#hostname Hr_5th_Lab4_605
+Tue Dec 3 12:37:12 2024   Switch0   Hr_5th_Lab4_605(config)#line con 0
+Tue Dec 3 12:37:21 2024   Switch0   Hr_5th_Lab4_605(config-line)#pass CSE
+Tue Dec 3 12:37:26 2024   Switch0   Hr_5th_Lab4_605(config-line)#login
+Tue Dec 3 12:37:30 2024   Switch0   Hr_5th_Lab4_605(config-line)#exit
+Tue Dec 3 12:37:33 2024   Switch0   Hr_5th_Lab4_605(config)#exit
+Tue Dec 3 12:37:57 2024   Switch0   Hr_5th_Lab4_605#login
+Tue Dec 3 12:39:17 2024   Switch0   Hr_5th_Lab4_605#exit
+Tue Dec 3 12:44:01 2024   Switch0   Hr_5th_Lab4_605>en
+Tue Dec 3 12:44:09 2024   Switch0   Hr_5th_Lab4_605#conf t
+Tue Dec 3 12:44:25 2024   Switch0   Hr_5th_Lab4_605(config)#line vty 0 15
+Tue Dec 3 12:44:36 2024   Switch0   Hr_5th_Lab4_605(config-line)#pass CSE
+Tue Dec 3 12:44:40 2024   Switch0   Hr_5th_Lab4_605(config-line)#login
+Tue Dec 3 12:44:44 2024   Switch0   Hr_5th_Lab4_605(config-line)#exit
+Tue Dec 3 12:45:13 2024   Switch0   Hr_5th_Lab4_605(config)#enable secret 6th_C
+Tue Dec 3 12:45:20 2024   Switch0   Hr_5th_Lab4_605(config)#exit
+Tue Dec 3 12:45:33 2024   Switch0   Hr_5th_Lab4_605#show run
+Tue Dec 3 12:46:23 2024   Switch0   Hr_5th_Lab4_605#show run
+Tue Dec 3 12:47:26 2024   Switch0   Hr_5th_Lab4_605#conf t
+Tue Dec 3 12:47:59 2024   Switch0   Hr_5th_Lab4_605(config)#banner motd #No Unauthorized Access#
+Tue Dec 3 12:48:08 2024   Switch0   Hr_5th_Lab4_605(config)#exit
+Tue Dec 3 12:48:26 2024   Switch0   Hr_5th_Lab4_605#en
+Tue Dec 3 12:48:35 2024   Switch0   Hr_5th_Lab4_605#show run
+Tue Dec 3 12:50:48 2024   Switch0   Hr_5th_Lab4_605#conf t
+Tue Dec 3 12:51:03 2024   Switch0   Hr_5th_Lab4_605(config)#service password-encryption
+Tue Dec 3 12:51:07 2024   Switch0   Hr_5th_Lab4_605(config)#exit
+Tue Dec 3 12:51:59 2024   Switch0   Hr_5th_Lab4_605#show run
+Tue Dec 3 12:52:58 2024   Switch0   Hr_5th_Lab4_605#exit
+Tue Dec 3 12:54:24 2024   Switch0   Hr_5th_Lab4_605>exit

@@ -1,0 +1,13 @@
+Tue Dec 31 13:17:44 2024   R0   Router>en
+Tue Dec 31 13:17:48 2024   R0   Router#conf t
+Tue Dec 31 13:17:58 2024   R0   Router(config)#int g0/1
+Tue Dec 31 13:18:32 2024   R0   Router(config-if)#ip address 10.16.3.254 255.255.252.0
+Tue Dec 31 13:18:47 2024   R0   Router(config-if)#no shutdown
+Tue Dec 31 13:18:51 2024   R0   Router(config-if)#end
+Tue Dec 31 13:18:53 2024   R0   Router#wr
+Tue Dec 31 13:22:12 2024   R0   Router#conf t
+Tue Dec 31 13:22:18 2024   R0   Router(config)#int g0/0
+Tue Dec 31 13:22:33 2024   R0   Router(config-if)#ip address 10.16.9.254 255.255.254.0
+Tue Dec 31 13:22:36 2024   R0   Router(config-if)#no shutdown
+Tue Dec 31 13:22:39 2024   R0   Router(config-if)#end
+Tue Dec 31 13:22:43 2024   R0   Router#wr
